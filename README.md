@@ -12,11 +12,18 @@ API_KEY는 [Spectral](https://www.spectral.finance/)에 회원가입한 뒤, Int
 ## package install
 
 ```shell
-npm install
+$ npm install
+$ npm install -g pm2
 ```
 
 ## start
 
 ```shell
-npm start
+$ npm start
+```
+
+## Stop
+
+```shell
+$ pm2 stop all
 ```

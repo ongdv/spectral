@@ -10,7 +10,7 @@ const LIMIT = 10;
 const DELAY = 20;
 // 읽어들일 data URL
 
-const scoreAwait = async () => {
+const testAwait = async () => {
   beforeStart();
   while (times <= LIMIT) {
     const start = (times - 1) * PER;
@@ -22,16 +22,17 @@ const scoreAwait = async () => {
     console.log(`Start Recording(${times})`);
     console.log('---------------');
     console.log('\nStart Request Calculate Score\n');
-    await pre(dd, times);
+    // await pre(dd, times);
+    console.log('TEST');
 
     console.log('\nEnd Request Calculate Score\n');
     console.log('---------------');
     console.log('Waiting Calculate');
-    sleep(1000 * 60 * DELAY);
+    sleep(1000 * 60);
 
     // console.log('---------------');
     console.log('\nRequest MACRO, Insights\n');
-    await getInfo(dd, times);
+    console.log('TEST');
 
     console.log('---------------');
     console.log(`Done Recording(${times})`);
@@ -40,4 +41,4 @@ const scoreAwait = async () => {
   }
 };
 
-scoreAwait();
+testAwait();

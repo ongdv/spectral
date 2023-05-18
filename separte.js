@@ -14,7 +14,7 @@ const seprate = () => {
     const data = datas.slice(start, start + PER);
 
     data.forEach((e) => {
-      csvContent += e + '\n';
+      csvContent += e + '\r\n';
     });
 
     fs.writeFileSync(`address${times}.csv`, csvContent, { encoding: 'utf-8' });
