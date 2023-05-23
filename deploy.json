@@ -5,8 +5,7 @@
       "script": "node score.js",
       "env": {
         "NODE_ENV": "development"
-      },
-      "watch": true
+      }
     }
   ]
 }
